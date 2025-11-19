@@ -21,10 +21,9 @@ function renderFoods() {
     const li = document.createElement("li");
     li.innerHTML = `
       <span>${item.name} - ${item.calories} kcal</span>
-      <button onclick="removeFood(${index})" class="reset-btn" style="padding:4px 10px;">
-        Remove
-      </button>
+      <button onclick="removeFood(${index})" class="reset-btn" style="padding:4px 10px;">Remove</button>
     `;
+    
     foodList.appendChild(li);
   });
 
