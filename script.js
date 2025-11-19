@@ -66,13 +66,13 @@ function removeFood(index) {
   renderFoods();
 }
 
-resetBtn.addEventListener("click", () => {
+resetBtn.addEventListener("click", ()=> {
   foods = [];
   localStorage.removeItem("foods");
   renderFoods();
 });
 
-darkModeToggle.addEventListener("click", () => {
+darkModeToggle.addEventListener("click", ()=> {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
