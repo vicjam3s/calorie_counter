@@ -1,5 +1,5 @@
 body {
-  background-color: #78135a;
+  background-image: url('pic10.jpg');
   font-family: berlin sans fb;
   color: #222;
   margin: 0;
@@ -8,11 +8,11 @@ body {
 
 .container {
   max-width: 600px;
-  background: rgb(135, 59, 182);
+  background: rgba(116, 116, 116, 0.926);
   margin: 40px auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #4d4743;
 }
 
 .header {
@@ -25,27 +25,48 @@ h1 {
   margin: 0;
 }
 
-.add-btn, .reset-btn, .dark-btn {
-  background-color: #2563eb;
-  color: white;
+.add-btn{
+  background-color: #ffffff18;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reset-btn{
+  background-color: #0f8da9;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
 }
-.add-btn:hover,
+.dark-btn{
+  background-color: #003541c8;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: rgba(255, 255, 255, 0.217);
+}
+
 .dark-btn:hover {
-  background-color: #1d4ed8;
+  background-color: #002c36;
 }
 
 .reset-btn {
   width: 100%;
-  background-color: #b11d84;
+  background-color: #007d15f0;
   margin-top: 15px;
 }
 
 .reset-btn:hover {
-  background-color: #b9601cf0;
+  background-color: #0d6400;
 }
 
 .food-form {
@@ -57,7 +78,7 @@ h1 {
 .food-form input {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 #foodList {
@@ -70,7 +91,7 @@ h1 {
   background: #f8f8f8;
   padding: 10px;
   margin-bottom: 8px;
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   border: 1px solid #ddd;
