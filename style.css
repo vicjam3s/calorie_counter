@@ -1,7 +1,8 @@
 body {
-  background-image: url('pic10.jpg');
+  background-color: #ffffff;
+  background-size: cover;
   font-family: berlin sans fb;
-  color: #222;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -61,12 +62,12 @@ h1 {
 
 .reset-btn {
   width: 100%;
-  background-color: #007d15f0;
+  background-color: #02007d;
   margin-top: 15px;
 }
 
 .reset-btn:hover {
-  background-color: #0d6400;
+  background-color: #010168de;
 }
 
 .food-form {
@@ -103,12 +104,12 @@ h1 {
 }
 /*Darkmode*/
 body.dark {
-  background-color: #1a1a1a;
+  background-color: rgb(0, 0, 0); 
   color: #f0f0f0;
 }
 
 body.dark .container {
-  background-color: #2a2a2a;
+  background-color: #2a2a2ae2;
   box-shadow: 0 0 10px #000;
 }
 
@@ -119,12 +120,22 @@ body.dark #foodList li {
   color: white;
 }
 
-body.dark .add-btn,
-body.dark .reset-btn,
+body.dark .add-btn,{
+ 
+}
+body.dark .reset-btn{
+  width: 100%;
+  background-color: #00157de2;
+  margin-top: 15px;
+}
 body.dark .dark-btn {
-  background-color: #444;
+  background-color: #3c2a03e8;
 }
 
 body.dark .dark-btn:hover {
-  background-color: #666;
+  background-color: #3c2a03;
+}
+
+body.dark .reset-btn:hover{
+    background-color: #00157d;
 }
