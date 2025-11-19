@@ -81,4 +81,29 @@ h1 {
   font-weight: bold;
 }
 /*Dark mode*/
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
 
+body.dark .container {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px #000;
+}
+
+body.dark input,
+body.dark #foodList li {
+  background-color: #333;
+  border-color: #555;
+  color: white;
+}
+
+body.dark .add-btn,
+body.dark .reset-btn,
+body.dark .dark-btn {
+  background-color: #444;
+}
+
+body.dark .dark-btn:hover {
+  background-color: #666;
+}
