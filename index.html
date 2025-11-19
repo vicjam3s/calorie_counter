@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calorie Counter</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Calorie Counter</h1>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle" class="dark-btn">
+        Dark Mode
+      </button>
+    </div>
+
+    <!-- Add Food Form -->
+    <form id="foodForm" class="food-form">
+      <input type="text" id="foodName" placeholder="Food name" required />
+      <input type="number" id="foodCalories" placeholder="Calories" required />
+      <button class="add-btn">Add</button>
+    </form>
+
+    <!-- Food List -->
+    <ul id="foodList"></ul>
+
+    <!-- Total Calories -->
+    <div class="total">
+      Total Calories: <span id="totalCalories">0</span>
+    </div>
+
+    <!-- Reset Button -->
+    <button id="resetBtn" class="reset-btn">
+      Reset Day
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
