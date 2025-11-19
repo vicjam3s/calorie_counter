@@ -6,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Container */
 .container {
   max-width: 600px;
   background: white;
@@ -16,7 +15,6 @@ body {
   box-shadow: 0 0 10px #ccc;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +25,6 @@ h1 {
   margin: 0;
 }
 
-/* Buttons */
 .add-btn, .reset-btn, .dark-btn {
   background-color: #2563eb;
   color: white;
@@ -36,3 +33,52 @@ h1 {
   border-radius: 6px;
   cursor: pointer;
 }
+.add-btn:hover,
+.dark-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: #dc2626;
+  margin-top: 15px;
+}
+
+.reset-btn:hover {
+  background-color: #b91c1c;
+}
+
+.food-form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.food-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#foodList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#foodList li {
+  background: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+}
+
+.total {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*Dark mode*/
+
