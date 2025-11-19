@@ -1,0 +1,1 @@
+This is a javascript powered calorie counter that can calculate, log and total your daily, weekly or within the timeframe of your choosing efficiently and incredibly fast.
