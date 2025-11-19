@@ -11,32 +11,32 @@ let darkMode = localStorage.getItem("darkMode") === "enabled";
 
 if (darkMode) document.body.classList.add("dark");
 
-function renderFoods() {
+function renderFoods(){
   foodList.innerHTML = "";
   let total = 0;
 
-  foods.forEach((item, index) => {
+  foods.forEach((item, index) =>{
     total += item.calories;
 
     const li = document.createElement("li");
     li.innerHTML = `
-      <span>${item.name} - ${item.calories} kcal</span>
+      <span> ${item.name} - ${item.calories} kcal</span>
       <button onclick="removeFood(${index})" class="reset-btn" style="padding:4px 10px;">Remove</button>
     `;
-    
+
     foodList.appendChild(li);
   });
 
   totalCaloriesDisplay.textContent = total;
 }
 
-async function fetchCalories(foodName) {
+async function fetchCalories(foodName){
   await new Promise((resolve) => setTimeout(resolve, 300));
 
   const manual = Number(foodCaloriesInput.value);
   if (manual > 0) return manual;
 
-  const fakeData = {
+  const fakeData ={
     apple: 95,
     banana: 110,
     rice: 206,
@@ -46,7 +46,7 @@ async function fetchCalories(foodName) {
   return fakeData[foodName.toLowerCase()] || 100;
 }
 
-foodForm.addEventListener("submit", async (e) => {
+foodForm.addEventListener("submit", async (e) =>{
   e.preventDefault();
 
   const name = foodNameInput.value.trim();
@@ -65,13 +65,13 @@ function removeFood(index) {
   renderFoods();
 }
 
-resetBtn.addEventListener("click", ()=> {
+resetBtn.addEventListener("click", () =>{
   foods = [];
   localStorage.removeItem("foods");
   renderFoods();
 });
 
-darkModeToggle.addEventListener("click", ()=> {
+darkModeToggle.addEventListener("click", () =>{
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
